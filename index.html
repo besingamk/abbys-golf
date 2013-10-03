@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abby Arevalo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="main_container">
+	<div class="abby_header_title">
+		<img src="images/abby-center-banner.png">
+	</div>
+	<div class="wrapper">
+		<div class="nav">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Me</a></li>
+				<li><a href="">Gallery</a></li>
+				<li><a href="">Tournaments</a></li>
+				<li><a href="">News</a></li>
+			</ul>
+			<div class="nav-ribbon-left"></div>
+			<div class="nav-ribbon-right"></div>
+			<div class="cf"></div>
+			
+		</div>
+		<div class="container">
+			<div class="main_content">
+				<div class="slideContaner">
+					<div id="slideshow">
+						<ul id="nav">
+							<li id="prev"><a href=""><img src="images/slider-arrow-left.png"></a></li>
+							<li id="next"><a href=""><img src="images/slider-arrow-right.png"></a></li>
+						</ul>
+						<ul id="slides">
+							<li><img src="images/slider-im2.jpg"></li>
+							<li><img src="images/slider-im1.jpg"></li>
+						</ul>
+					</div>
+				</div> <!-- end of slideshow -->
+
+				<div class="sites_featured">
+					<h1>Welcome</h1>
+					<p>Welcome to abby-golf.com, home of my offical website. If you're a first timevisitor, check out my bio and stats, photogallery, and get all the latest news and inside information. Enjoy browsing!</p>
+					<p class="closing">Sincerely,<br><span class="signature">Abby</span></p>
+				</div>
+			</div>
+			<div class="sides">
+				<div class="updates">
+					<img class="banner" src="images/update-banner.png">
+					<p><img src="images/update_thumb_sample.png">Arevalo Grabs 1st Place in San Diego Junior Masters</p>
+					<p class="author">Tempo<br><span>Wednesday, July 16, 2008</span></p>
+				</div>
+
+				<div class="sponsor">
+					<img class="banner" src="images/sponsor-banner.png">
+					<p class="sponsor_img"><img src="images/sponsor-img1.png"></p>
+				</div>
+
+				<div class="social_icon">
+					<img src="images/fb-icon.png"><img src="images/twit-icon.png"><img src="images/mail-icon.png">
+				</div>
+			</div>
+
+			
+		</div>
+	</div> <!-- end of wrapper -->
+
+</div>
+<div class="footer">
+	<p>Copyright 2013 Abby Arevalo, All rights reserved.</p>
+</div>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.cycle.js"></script>
+<script>
+	$(document).ready(function(){
+		// code goes here
+		$("#slideshow").css("overflow", "hidden");
+		$("ul#slides").cycle({
+			fx: 'fade',
+			pause: 0.5,
+			prev: '#prev',
+			next: '#next'
+		});
+
+		$("#slideshow").hover(function() {
+		$("ul#nav").fadeIn();
+		},
+			function() {
+		$("ul#nav").fadeOut();
+		});
+	});
+</script>
+</body>
+</html>
